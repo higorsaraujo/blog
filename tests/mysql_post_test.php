@@ -30,7 +30,7 @@ function buscar_post()  : void
 //Teste update banco de dados
 function update_post($id,$titulo,$texto, $data_postagem) : void
 {
-    $dados = [  'titulo' => $nome,
+    $dados = [  'titulo' => $titulo,
                 'texto' => $texto,
                 'data_postagem' => $data_postagem];
     $criterio = [['id','=',$id]];
