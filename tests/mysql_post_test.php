@@ -5,7 +5,7 @@ require_once '../core/conexao_mysql.php';
 require_once '../core/sql.php';
 require_once '../core/mysql.php';
 
-insert_post('Harry Potter', 'Texto numero 2','2','2023-08-18 10:00:00');
+insert_post('Harry Potter', 'Texto numero 2','1','2023-08-18 10:00:00');
 buscar_post();
 
 
