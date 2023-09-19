@@ -56,15 +56,13 @@
                         <div class="form-group">
                                 <label for="titulo">Título:</label>
                                 <input class="form-group" type="text"
-                                    require="require" id="titulo" name="titulo"
-                                    value="<?php echo $entidade['titulo'] ?? '' ?>">
+                                    id="titulo" name="titulo"
+                                    value="<?php echo $entidade['titulo'] ?? '' ?>" required>
                         </div>
                         <div class="form-group">
                                 <label for="texto">Texto:</label>
-                                <textarea class="form-control" type="text"
-                                    require="require" id="texto" name="texto" rows="5">
-                                    <?php echo $entidade['texto'] ?? '' ?>
-                                </textarea>
+                                <textarea class="form-control"
+                                    id="texto" name="texto" rows="5" required><?php echo $entidade['texto'] ?? '' ?></textarea>
                         </div>
                         <div class="form-group">
                             <label for="texto">Postar em:</label>
@@ -77,17 +75,15 @@
                             <div class="row">
                                 <div class="col-md-3">  
                                     <input class="form-control" type="date"
-                                        require="required"
                                         id="data_postagem"
                                         name="data_postagem"
-                                        value="<?php echo $data ?>">
+                                        value="<?php echo $data ?>" required>
                                 </div>
                                 <div class="col-md-3">  
                                     <input class="form-control" type="time"
-                                        require="required"
                                         id="hora_postagem"
                                         name="hora_postagem"
-                                        value="<?php echo $hora ?>">
+                                        value="<?php echo $hora ?>" required>
                                 </div>
                             </div>
                         </div>   
